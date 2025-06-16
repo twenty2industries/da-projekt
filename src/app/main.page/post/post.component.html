@@ -1,0 +1,9 @@
+<section>
+  <div class="postImages">
+    @for (post of posts; track $index) {
+    @for (img of post.img; track $index) {
+    <img src="{{img}}" alt="user post images">
+    }
+    }
+  </div>
+</section>
